@@ -24,7 +24,7 @@ build:
     - script:
         name: create an image from the Dockerfile using docker build 
         code: |
-          docker build -t docker.io/$USERNAME/direct-docker-golang:latest .
+          docker build --tag docker.io/$USERNAME/direct-docker-golang:latest .
           echo running docker images
           docker images
     - script:
